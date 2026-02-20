@@ -5,15 +5,33 @@ body {
     padding: 0;
 }
 
+.intro {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    flex: 100%;
+
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
 
 .restaurant {
     background-color: #fff;
-    margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
     text-align: center;
+    flex: 70%;
+    flex-direction: column;
 }
 
 .restaurant img {
@@ -25,16 +43,15 @@ body {
 
 .cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .card {
     background-color: #fff;
     padding: 15px;
     border: 1px solid #ddd;
-    flex: 30%;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: calc(50% - 10px);
@@ -45,4 +62,27 @@ body {
 .card img {
     max-width: 100%;
     height: auto;
+}
+
+aside {
+    flex: 25%;
+    padding: 15px;
+    margin-left: 20px;
+    border: #ddd solid 1px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.selected {
+    border: 3px solid rgb(225, 198, 48);
+    background-color: #fff8dc;
+}
+
+.favorite {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
 }
